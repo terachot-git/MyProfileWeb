@@ -63,10 +63,11 @@ export const ProfilePage = () => (
             </h3>
             <ul className="space-y-2">
               {[
-                "REACT",
-                "JAVASCRIPT",
+                "REACT NEXT",
+                "JAVASCRIPT TYPESCRIPT",
                 "HTML / CSS",
                 "NodeJS / EXPRESS",
+                "MySQL Prisma",
                 "Figma / Canva",
                 "3D Camera & Object Tracking",
               ].map((skill) => (
