@@ -2,6 +2,17 @@
 const projects = [
   {
     id: 1,
+    title: "ChatZZZ",
+    description: "A real-time role-playing chat application. Embody your favorite character and join topic-specific rooms for live conversations, complete with text and image sharing.",
+    imageUrl: "https://res.cloudinary.com/denaxvdnw/image/upload/v1763036470/test_tjkt4o.png",
+    links: {
+      website:"https://chatzzz-gamma.vercel.app/",
+      frontend: "https://github.com/terachot-git/ProjectChat",
+      backend: "https://github.com/terachot-git/websocketApiChat",
+    },
+  },
+    {
+    id: 2,
     title: "Yak-Uad Community",
     description: "A web application for users to create and share spaces dedicated to their favorite things, such as pets, game characters, or anime.",
     imageUrl: "https://res.cloudinary.com/denaxvdnw/image/upload/v1755591996/%E0%B8%AA%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B8%8A%E0%B9%87%E0%B8%AD%E0%B8%95_2025-08-19_152549_tvkapj.png",
@@ -11,7 +22,7 @@ const projects = [
     },
   },
   {
-    id: 2,
+    id: 3,
     title: "HR Management System",
     description: "A web application designed for HR to manage time attendance issues. It automatically calculates check-in/out times against the leave system and includes an action log for transparency.",
     imageUrl: "https://res.cloudinary.com/denaxvdnw/image/upload/v1755593834/%E0%B8%AA%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B8%8A%E0%B9%87%E0%B8%AD%E0%B8%95_2025-08-19_155643_vmrna6.png",
@@ -46,7 +57,7 @@ export const PortfolioPage = () => (
             {projects.map((project) => (
                 <div key={project.id} className="p-8 bg-white rounded-2xl shadow-md flex flex-col md:flex-row gap-8">
                     <div className="md:w-1/2 lg:w-3/5">
-                        <a href={project.links.frontend} target="_blank" rel="noopener noreferrer" className="block group">
+                        <a href={project.links.website||project.links.frontend} target="_blank" rel="noopener noreferrer" className="block group">
                            <img
                                 src={project.imageUrl}
                                 alt={`Screenshot of ${project.title}`}
